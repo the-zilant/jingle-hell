@@ -177,7 +177,7 @@ textarea:hover,
 textarea:focus {}
 
 select {
-background: url(/AW_v7/img/select-arrow.png) right center no-repeat #404040;
+background: url(../img/select-arrow.png) right center no-repeat #404040;
 text-indent: 0.01px; text-overflow: '';
 -webkit-appearance: none;
 -moz-appearance: none;
@@ -850,7 +850,7 @@ font-family: 'Playfair Display', sans-serif; font-size: 100%; font-weight: 900; 
 @media all and (min-width: 1150px) {
 .fixed .menu-main ul li#logo {
 width: 70px; height: 45px;
-background-image: url(/AW_v7/img/logo.png);
+background-image: url(../img/logo.png);
 background-size: auto 100%;
 background-position: 50% 50%;
 background-repeat: no-repeat;
@@ -910,11 +910,11 @@ cursor: pointer;
 }
 .search .search-button, .search input.search-button:active {
 margin: -7px 28px 0 0;
-background: url(/AW_v7/img/search.png) no-repeat;
+background: url(../img/search.png) no-repeat;
 }
 .search .search-tags, .search input.search-tags:active {
 margin: -7px 7px 0 0;
-background: url(/AW_v7/img/vico-tags.png) no-repeat;
+background: url(../img/vico-tags.png) no-repeat;
 }
 
 /*
@@ -955,7 +955,7 @@ color: #b22;
 display: block;
 max-width: 25%; height: 30px;
 padding: 0px 25px 0px 3px;
-background: url(/AW_v7/img/breadcrumbs.png) no-repeat center right;
+background: url(../img/breadcrumbs.png) no-repeat center right;
 overflow: hidden; /* ooops! global */
 white-space: nowrap; font-size: 90%; line-height: 30px; font-weight: bold; text-overflow: ellipsis;
 }
@@ -1295,7 +1295,7 @@ text-transform: uppercase; color: #8c8c8c;
 }
 .content-list-col ul li a:hover {
 margin-left: 10px;
-background: url(/AW_v7/img/li.png) no-repeat left center;
+background: url(../img/li.png) no-repeat left center;
 color: #ccc;
 -webkit-transition: margin-left 0.2s ease-in-out;
 -moz-transition: margin-left 0.2s ease-in-out;
@@ -1645,116 +1645,14 @@ margin: 5px auto;
 .hideBtn {
 display: block;
 padding: 7px 14px 0px;
-background: transparent url(/AW_v7/img/_plus.gif) no-repeat left center;
+background: transparent url(../img/_plus.gif) no-repeat left center;
 outline: none;
 cursor: pointer;
 }
 
-.hideBtn.show {background-image: url(/AW_v7/img/_minus.gif);}
+.hideBtn.show {background-image: url(../img/_minus.gif);}
 
 .hideCont {display: none;}
-
-
-/* Главная ролевой
-==============================
- */
-html.frpg, 
-html.frpg body {width: 100%; height: 100%;}
-
-html.frpg body {
-background-image: url(/AW_v7/img/FRPG/bg.jpg);
-background-position: 50% 0;
-overflow-x: hidden; overflow-y: hidden;
-}
-
-html.frpg body .wrap, 
-html.frpg body .wrap a, 
-html.frpg body .wrap p {color: rgb(255, 255, 240) !important;}
-
-.frpg nav ul li a {text-shadow: 1px 1px 2px black, 0 0 1em rgb(155, 205, 155);}
-
-.frpg input[type=submit], 
-.frpg input[type=button], 
-.frpg input[type=reset], 
-.frpg button {
-background: none !important;
--webkit-border-radius: 0px !important;
--moz-border-radius: 0px !important;
-border-radius: 0px !important;
-border: none !important;
--webkit-box-shadow: none !important;
--moz-box-shadow: none !important;
-box-shadow: none !important;
-font-weight: 400 !important; color: #fff !important;
-}
-
-.frpg input[type=text], 
-.frpg input[type=email], 
-.frpg input[type=url], 
-.frpg input[type=password], 
-.frpg textarea, 
-.frpg select {
-width: 80% !important;
-margin: 5px 10% !important;
-background: none !important;
-border-bottom: 1px solid #333 !important;
-font-weight: 400 !important; color: #fff !important;
-}
-
-.frpg nav ul li a {text-transform: uppercase; font-weight: 400;}
-
-.frpg nav ul li a {
-display: block;
-padding: 10px 14px;
-}
-
-.frpg nav ul li a:hover {text-shadow: 1px 1px 2px #b22, 0 0 2em rgb(155, 205, 155); text-decoration: none;}
-
-.frpg body > div.p_fixed {
-height: 100%;
-background-image: -webkit-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .70) 40%, rgba(0, 0, 0, .70) 60%, rgba(0, 0, 0, 0));
-background-image: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .70) 40%, rgba(0, 0, 0, .70) 60%, rgba(0, 0, 0, 0));
-background-image: -moz-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .70) 40%, rgba(0, 0, 0, .70) 60%, rgba(0, 0, 0, 0));
-background-image: -o-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .70) 40%, rgba(0, 0, 0, .70) 60%, rgba(0, 0, 0, 0));
-background-image: -ms-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .70) 40%, rgba(0, 0, 0, .70) 60%, rgba(0, 0, 0, 0));
-background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .70) 40%, rgba(0, 0, 0, .70) 60%, rgba(0, 0, 0, 0));
-z-index: -9;
-}
-
-canvas#smokeCanvas {
-position: absolute;
-width: 100%; height: 200px;
-bottom: 0px; left: 0;
-}
-
-
-/* Личные страницы пациентов
-==============================
- */
-.user_name {
-padding: 15px 0 50px 0;
-font-weight: bold; color: #ccc;
-}
-
-.user_bio {
-padding: 50px 25% 15px;
-background: #303030;
-color: #ccc;
-}
-
-.user_ava {
-display: block;
-width: 90px; height: 90px;
-bottom: -75px;
-left: 50%; margin-left: -45px;
-background: #000;
--webkit-border-radius: 50%;
--moz-border-radius: 50%;
-border-radius: 50%;
-border-width: 3px; border-style: solid; border-color: #333;
-z-index: 99;
-}
-.user_ava img {height: 90px;}
 
 
 /* Правый блок
@@ -2178,7 +2076,7 @@ content: "";
 position: absolute;
 width: 30px; height: 30px;
 top: 10px; left: 15px;
-background: url(/AW_v7/img/nav-icon.png) no-repeat;
+background: url(../img/nav-icon.png) no-repeat;
 }
 .slider, 
 .preview {height: 355px;}
