@@ -880,49 +880,6 @@ border: 1px solid #333;
 .grid .text h3 a {font-size: 150%; color: #8c8c8c; text-decoration: none;}
 .grid .text h3 a:hover {color: #595959;}
 
-/*
- * Информация о материале
- */
-.ve-details {
-width: 31px; height: 200px;
-background: #252525;
-border-right: 1px solid #333;
-}
-
-span.ve-author, a.ve-author, 
-span.ve-views, a.ve-views, 
-span.ve-comments, a.ve-comments {
-display: block;
-width: 30px; height: 33.3%;
-font-family: 'FontAwesome'; font-size: 95%; line-height: 66px; color: #8c8c8c;
-cursor: pointer;
-}
-
-span.ve-author:hover, a.ve-author:hover, 
-span.ve-views:hover, a.ve-views:hover, 
-span.ve-comments:hover, a.ve-comments:hover {
-background-color: #1f1f1f;
-text-decoration: none;
-}
-
-span.ve-author, a.ve-author, 
-span.ve-views, a.ve-views {border-bottom: 1px solid #333;}
-
-/* avtor */
-span.ve-author, a.ve-author {z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '\f007'));}
-
-span.ve-author:after, a.ve-author:after {content: '\f007';}
-
-/* views */
-span.ve-views, a.ve-views {z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '\f06e'));}
-
-span.ve-views:after, a.ve-views:after {content: '\f06e';}
-
-/* comments */
-span.ve-comments, a.ve-comments {z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '\f0e6'));}
-
-span.ve-comments:after, a.ve-comments:after {content: '\f0e6';}
-
 
 /* Группы списков
 ------------------------------------------------------------
@@ -1216,79 +1173,7 @@ font-size: 85%;
 /* Комментарии
 ==============================
  */
-.comment {margin: 0 15px;}
-
-.comment .ava {
-display: block;
-width: 70px; height: 70px;
-top: 20px; left: 2%;
-background: #000;
--webkit-border-radius: 50%;
--moz-border-radius: 50%;
-border-radius: 50%;
-border-width: 3px; border-style: solid; border-color: #333;
-}
-.comment .ava:hover {border-color: #b22;}
-
-.comment .ava img {width: 100%; height: auto;}
-
-.comment .comment-block, 
-.comment .comment-block-form {
-min-height: 110px;
-margin: 11px 0 11px 120px;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
-}
-
-.comment .comment-block {background: #373737;}
-
-.comment .comment-block:after, 
-.comment .comment-block-form:after {
-content: '';
-position: absolute;
-top: 35px; left: 80px;
-border: 20px solid transparent;
-}
-
-.comment .comment-block:after {border-right: 20px solid #373737;}
-
-.comment .comment-block-form:after {border-right: 20px solid #404040;}
-
-.comment .message p, 
-.comment .bottom {
-padding: 10px 15px;
-color: #ccc;
-}
-
-.comment .message textarea {width: 100%; height: 135px;}
-
-.comment .bottom a.date {font-size: 80%; font-style: italic; color: #ccc;}
-.comment .bottom a.date:hover {text-decoration: underline;}
-
-/*
- * Форма добавления комментариев
- */
-.comment-respond {
-position: relative;
-width: 100%; height: auto;
-margin-top: 15px; padding: 15px 0;
-background: #1c1c1c;
-}
-
-.comment-respond h3, 
-.comment-respond p, 
-.comment-respond label {text-align: center; font-weight: bold;}
-
-.comment-respond p, 
-.comment-respond label {color: #8c8c8c;}
-
-.comment-respond .comment-form-comment textarea {
-width: 95%;
-margin: 5px auto;
-}
-
-#cancel-comment-reply-link {}
+.comment {background-color: #15202b;}
 
 /*
  * Спойлеры это плохо
@@ -1526,18 +1411,6 @@ li:nth-child(2).grid,
 li:nth-child(5).grid, 
 li:nth-child(8).grid {margin: 0 34px;}
 .grid .text {width: 100%; height: 300px;}
-.ve-details {
-float: none;
-width: 100%; height: 66px;
-border-right: 0;
-}
-span.ve-author, a.ve-author, 
-span.ve-views, a.ve-views, 
-span.ve-comments, a.ve-comments {
-float: left;
-width: 33.3%; height: 66px;
-}
-span.ve-comments, a.ve-comments {border-bottom: 1px solid #333;}
 .sidebar {width: 431px;}
 .sidebar section .inner, 
 .commercial {width: 400px;}
@@ -1596,18 +1469,6 @@ width: 100%;
 margin: 0 0 20px 0;
 }
 .grid .text {height: auto;}
-.ve-details {
-float: left;
-width: 31px; height: 200px;
-border-right: 1px solid #333;
-}
-span.ve-author, a.ve-author, 
-span.ve-views, a.ve-views, 
-span.ve-comments, a.ve-comments {
-float: none;
-width: 30px; height: 33.3%;
-}
-span.ve-comments, a.ve-comments {border-bottom: 0;}
 .sidebar {width: 331px;}
 .sidebar section .inner, 
 .commercial {width: 300px;}
@@ -1621,7 +1482,6 @@ span.ve-comments, a.ve-comments {border-bottom: 0;}
 #rainCanvas {margin-left: -45%;}
 .menu-main, 
 .search, 
-span.ve-comments, a.ve-comments, 
 .sidebar section.update .tabs-titles {border-bottom: 1px solid #333;}
 .menu-main, 
 .search, 
@@ -1629,7 +1489,6 @@ span.ve-comments, a.ve-comments,
 .modules, 
 .additional_description, 
 .grid .text, 
-.ve-details, 
 .sidebar, 
 .sidebar section.update .tabs-titles {float: none;}
 .menu-main, 
@@ -1638,7 +1497,6 @@ span.ve-comments, a.ve-comments,
 .modules, 
 .additional_description, 
 .grid .text, 
-.ve-details, 
 .sidebar, 
 .sidebar section.update .tabs-titles, 
 .sidebar section .inner, 
@@ -1658,17 +1516,10 @@ left: 50%; margin-left: -45%;
 .grid {margin-bottom: 0px;}
 .grid .text {max-height: none;}
 .grid .m-cover {margin: 0 5px;}
-.ve-details {height: 66px;}
-span.ve-author, a.ve-author, 
-span.ve-views, a.ve-views, 
-span.ve-comments, a.ve-comments, 
 .sidebar section.update .tabs-titles li {
 float: left;
 border-right: 1px solid #333;
 }
-span.ve-author, a.ve-author, 
-span.ve-views, a.ve-views, 
-span.ve-comments, a.ve-comments {width: 33.3%; height: 66px;}
 .additional_description, 
 .commercial {border-top: 1px solid #333;}
 .preview_center {margin: 44.5px auto;}
@@ -1693,20 +1544,6 @@ transform: rotate(0deg);
 .sidebar section .inner ul {padding-right: 0;}
 .shoes {margin: 0 auto 45px;}
 .not_twitch {margin: 15px 0 15px 0;}
-}
-
-@media all and (max-width: 850px) { /* for frpg */
-.frpg .wrap div.media_base_width {margin: 10% auto 0%;}
-.frpg input[type=text], 
-.frpg input[type=email], 
-.frpg input[type=url], 
-.frpg input[type=password], 
-.frpg textarea, 
-.frpg select {text-align: center;}
-.frpg section, 
-.frpg section > div {width: 100%;}
-.frpg section > div {float: none;}
-.frpg body > div.p_fixed {background: rgba(0, 0, 0, .70);}
 }
 
 @media all and (max-width: 750px) {
@@ -1741,8 +1578,6 @@ background: url(../img/nav-icon.png) no-repeat;
 li:nth-child(2n).grid, 
 li:nth-child(5).grid, 
 li:nth-child(8).grid {margin: 0;}
-.ve-details, 
-span.ve-rating, a.ve-rating {border-right: none;}
 .img, 
 .comment-form-author input, 
 .comment-form-email input {float: none;}
@@ -1752,8 +1587,6 @@ margin: 0 25%;
 }
 .bordered {border: none;}
 .bordered td {border-left: none;}
-.comment-form-author, 
-.comment-form-email {width: 100%;}
 .slidenav {width: 50%;}
 }
 
@@ -1771,10 +1604,7 @@ margin: 0 25%;
 .breadcrumbs, 
 .grid .m-cover, 
 .additional_description, 
-.footer_info .fr, 
-.com-order-block, 
-.comment .comment-block:after, 
-.comment .ava {display: none;}
+.footer_info .fr {display: none;}
 .grid .text {
 float: none;
 text-align: center;
@@ -1784,8 +1614,6 @@ height: 150px;
 padding: 0 0;
 }
 img.img {margin: 0;}
-.comment .comment-block, 
-.comment .comment-block-form {margin: 11px 0 11px 0;}
 .shoes > section, 
 .shoes_for_personal_page > section {text-align: center;}
 }
