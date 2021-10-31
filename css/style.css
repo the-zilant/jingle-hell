@@ -503,7 +503,7 @@ font-family: 'Playfair Display', sans-serif; font-size: 100%; font-weight: 900; 
 @media all and (min-width: 1150px) {
 .fixed .menu-main ul li#logo {
 width: 70px; height: 45px;
-background: url(../img/logo.png) red;
+background: url(../img/logo.png) rgba(255, 0, 0, .7);
 background-size: auto 100%;
 background-position: 50% 50%;
 background-repeat: no-repeat;
@@ -1173,7 +1173,7 @@ font-size: 85%;
 /* Комментарии
 ==============================
  */
-.comment {background-color: #15202b;}
+#comment_b {background-color: #15202b;}
 
 /*
  * Спойлеры это плохо
