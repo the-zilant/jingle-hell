@@ -1373,6 +1373,69 @@ cursor: pointer;
 #audioplayerAW {width: 100%; height: 100%;}
 
 
+/* Intro
+==============================
+ */
+.introjs-tooltip {
+    color: #fff;
+    background-color: rgba(56, 56, 56, 0.9)
+}
+
+.introjs-button,
+.introjs-button:hover, .introjs-button:focus, .introjs-button:active,
+.introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+    outline: none;
+    text-shadow: none; color: #fff;
+    box-shadow: none;
+    border-shadow: none;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-image: none;
+    background-color: transparent
+}
+
+.introjs-button:hover, .introjs-button:focus, .introjs-button:active {
+  border: 1px solid #fff
+}
+
+.introjs-disabled, .introjs-disabled:focus, .introjs-disabled:hover {
+    color: #ccc;
+    border: 1px solid transparent
+}
+
+.introjs-arrow {
+    border: 10px solid #fff
+}
+
+.introjs-arrow.top, .introjs-arrow.top-middle, .introjs-arrow.top-right {
+    border-color: transparent transparent rgba(56, 56, 56, 0.9);
+    left: 20px
+}
+
+.introjs-arrow.bottom, .introjs-arrow.bottom-middle, .introjs-arrow.bottom-right {
+    border-color: rgba(56, 56, 56, 0.9) transparent transparent;
+    left: 20px; bottom: -20px
+}
+
+.introjs-arrow.left, .introjs-arrow.right {
+    top: 20px
+}
+
+.introjs-arrow.left-bottom, .introjs-arrow.right-bottom {
+    bottom: 20px
+}
+
+.introjs-arrow.left, .introjs-arrow.left-bottom {
+    border-color: transparent rgba(56, 56, 56, 0.9) transparent transparent;
+    left: -20px
+}
+
+.introjs-arrow.right, .introjs-arrow.right-bottom {
+    border-color: transparent transparent transparent rgba(56, 56, 56, 0.9);
+    right: -20px
+}
+
+
 /* Переключатели
 ==============================
  */
