@@ -113,3 +113,8 @@ $(function() {
 $('.slider').glide({
 	autoplay: 11000
 });
+
+
+// introJs
+
+introJs().setOptions({position: 'left'}).addHints();
