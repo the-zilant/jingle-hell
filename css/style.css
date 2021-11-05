@@ -211,7 +211,7 @@ color: #303030;
  */
 body {
 min-width: 320px; width: 100%;
-background: url(../img/bg.png) #eee;
+background: url(../img/bg.png) #800;
 background-repeat: repeat;
 background-size: auto;
 -webkit-background-size: 102% auto;
@@ -221,7 +221,7 @@ background-size: auto;
 background-size: 50%;
 background-repeat: no-repeat;
 overflow-x: hidden; overflow-y: auto;
-font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: normal; color: #aaa;
+font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: normal; color: #aaa;
 -webkit-font-smoothing: antialiased;
 }
 
@@ -245,7 +245,7 @@ h4,
 h5, 
 h6 {
 margin: 7px 0;
-font-family: 'Playfair Display', sans-serif; font-weight: 500; color: rgb(193, 205, 193);
+font-weight: 500;
 }
 
 p {
@@ -433,7 +433,7 @@ display: inline-table;
 
 .frpg .wrap div.media_base_width {margin: 20% auto 1%;}
 
-#container {background: #252525;}
+#container {background: #fff;}
 
 /*
  * clearfix
@@ -628,7 +628,6 @@ white-space: nowrap; font-size: 90%; line-height: 30px; font-weight: bold; text-
  */
 .slider {
 height: 400px;
-background: #000;
 }
 
 .slides {
@@ -698,7 +697,6 @@ background-repeat: no-repeat;
  */
 .main_slide {
 height: 100%;
-background: rgba(0, 0, 0, .30);
 }
 
 .main_slide section h3 {font-size: 250%; line-height: 350px; font-weight: bold; color: #f5f5f5; text-shadow: 1px 1px 3px #000;}
@@ -847,19 +845,19 @@ margin: 0 0 20px 0;
 .grid .text {
 width: 770px;
 min-height: 210px; height: auto; max-height: 350px;
-border-bottom: 1px solid #333;
+border-bottom: 1px solid #eee;
 }
 .grid .text:after {
 content: "";
 position: absolute;
 width: 100%; height: 50px;
 right: 0; bottom: 0;
-background-image: -webkit-gradient(to bottom, transparent, rgb(37, 37, 37) 96%);
-background-image: -webkit-linear-gradient(to bottom, transparent, rgb(37, 37, 37) 96%);
-background-image: -moz-linear-gradient(to bottom, transparent, rgb(37, 37, 37) 96%);
-background-image: -o-linear-gradient(to bottom, transparent, rgb(37, 37, 37) 96%);
-background-image: -ms-linear-gradient(to bottom, transparent, rgb(37, 37, 37) 96%);
-background-image: linear-gradient(to bottom, transparent, rgb(37, 37, 37) 96%);
+background-image: -webkit-gradient(to bottom, transparent, rgb(255, 255, 255) 96%);
+background-image: -webkit-linear-gradient(to bottom, transparent, rgb(255, 255, 255) 96%);
+background-image: -moz-linear-gradient(to bottom, transparent, rgb(255, 255, 255) 96%);
+background-image: -o-linear-gradient(to bottom, transparent, rgb(255, 255, 255) 96%);
+background-image: -ms-linear-gradient(to bottom, transparent, rgb(255, 255, 255) 96%);
+background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255) 96%);
 z-index: 9;
 }
 
@@ -871,14 +869,14 @@ z-index: 10;
 .grid .m-cover img {
 width: 100%; height: auto;
 padding: 5px;
-border: 1px solid #333;
+border: 1px solid #eee;
 }
 
 .grid .text h3, 
 .grid .text p {padding: 0 15px;}
 
-.grid .text h3 a {font-size: 150%; color: #8c8c8c; text-decoration: none;}
-.grid .text h3 a:hover {color: #595959;}
+.grid .text h3 a {font-size: 150%; color: #000; text-decoration: underline;}
+.grid .text h3 a:hover {color: #595959; text-decoration: none;}
 
 
 /* Группы списков
@@ -940,9 +938,6 @@ font-size: 90%;
  * personal_page_center = p_relative and media_base_width and center and castration and b_shadow_brown and t_center
  */
 .preview {height: 400px;}
-
-.preview, 
-.personal_page {background-color: rgb(165, 42, 42);}
 
 .preview_center {
 height: 250px;
@@ -1060,6 +1055,21 @@ font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(2
  * img
    ...
  */
+.aAva {
+position: sticky;
+display: block;
+width: 36px; height: 36px;
+top: 50px; left: auto;
+margin-left: -15px;
+background: #b22;
+border-radius: 50%;
+}
+
+.aMessage {
+padding-top: 20px; padding-left: 30px;
+color: #000;
+}
+
 .aMessage h2 {font-size: 130%;}
 
 .aMessage h3 {font-size: 120%;}
@@ -1067,27 +1077,33 @@ font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(2
 .aMessage > h2, 
 .aMessage > h3, 
 .aMessage > p, 
-.aMessage > div p, 
 .aMessage > form p, 
 .wide_block div, 
 .wide_block_color div {padding: 0px 35px;}
 
+.aMessage > p:first-of-type {
+    margin-top: -30px;
+}
+
 .aMessage li {
 padding: 10px 35px 10px;
-border-bottom: 1px solid #333;
-font-size: 90%; text-shadow: #000 0px 0px 3px;
+border-bottom: 1px solid #eee;
+font-size: 90%;
 }
 
 .aMessage iframe {
 width: 100%; height: 300px;
-padding: 0 10%;
+}
+
+.aMessage a {
+    color: #000; text-decoration: underline;
 }
 
 .wide_block, 
 .wide_block_color {height: auto;}
 
 .wide_block_color, 
-.atcScreen {background: #303030;}
+.atcScreen {background: #eee;}
 
 .wide_block img, 
 .wide_block_color img {max-width: 50%;}
@@ -1095,7 +1111,7 @@ padding: 0 10%;
 .red_block {background-color: rgb(165, 42, 42);}
 
 .atcScreen {
-width: 90%;
+width: 60%;
 margin: 15px auto; padding: 7px;
 }
 
@@ -1173,7 +1189,6 @@ font-size: 85%;
 /* Комментарии
 ==============================
  */
-#comment_b {background-color: #15202b;}
 
 /*
  * Спойлеры это плохо
@@ -1469,6 +1484,7 @@ margin: 15px 0 15px 0;
 float: left;
 width: 400px;
 margin: 0px;
+color: #000;
 }
 li:nth-child(2).grid, 
 li:nth-child(5).grid, 
@@ -1674,8 +1690,8 @@ text-align: center;
 }
 .aMessage iframe {
 height: 150px;
-padding: 0 0;
 }
+.atcScreen  {width: 80%;}
 img.img {margin: 0;}
 .shoes > section, 
 .shoes_for_personal_page > section {text-align: center;}
