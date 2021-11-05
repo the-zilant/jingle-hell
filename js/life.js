@@ -6,13 +6,13 @@ $(function() {
 
 	$(window).scroll(function() {
 
-		if($(this).scrollTop() > pos.top+hat.height() && hat.hasClass('default')) {
+		if ($(this).scrollTop() > pos.top+hat.height() && hat.hasClass('default')) {
 
 			hat.fadeOut('fast', function() {
 				$(this).removeClass('default').addClass('fixed').fadeIn('fast');
 			});
 
-		} else if($(this).scrollTop() <= pos.top && hat.hasClass('fixed')) {
+		} else if ($(this).scrollTop() <= pos.top && hat.hasClass('fixed')) {
 
 			hat.fadeOut('fast', function() {
 				$(this).removeClass('fixed').addClass('default').fadeIn('fast');
