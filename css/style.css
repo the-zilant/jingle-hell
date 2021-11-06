@@ -6,17 +6,29 @@ Author URI: https://www.fl.ru/users/ss-valeryevich/portfolio/
 Version: 2.2
 */
 
-@import url('css/font-awesome.css');
+@import url('font-awesome.css');
 
 @font-face {
 font-family: 'FontAwesome';
-src: url('font/Awesome/fontawesome-webfont.eot?v=4.3.0');
+src: url('../font/Awesome/fontawesome-webfont.eot?v=4.3.0');
 src: 
-url('font/Awesome/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), 
-url('font/Awesome/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), 
-url('font/Awesome/fontawesome-webfont.woff?v=4.3.0') format('woff'), 
-url('font/Awesome/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), 
-url('font/Awesome/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+url('../font/Awesome/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), 
+url('../font/Awesome/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), 
+url('../font/Awesome/fontawesome-webfont.woff?v=4.3.0') format('woff'), 
+url('../font/Awesome/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), 
+url('../font/Awesome/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+font-style: normal; font-weight: normal;
+}
+
+@font-face {
+font-family: 'pf_stamps_prosolid';
+src: url('../font/stampspro/stampspro-solid-webfont.eot');
+src:
+url('../font/stampspro/stampspro-solid-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font/stampspro/stampspro-solid-webfont.woff2') format('woff2'),
+url('../font/stampspro/stampspro-solid-webfont.woff') format('woff'),
+url('../font/stampspro/stampspro-solid-webfont.ttf') format('truetype'),
+url('../font/stampspro/stampspro-solid-webfont.svg#pf_stamps_prosolid') format('svg');
 font-style: normal; font-weight: normal;
 }
 
@@ -211,7 +223,7 @@ color: #303030;
  */
 body {
 min-width: 320px; width: 100%;
-background: url(../img/bg.png) #800;
+background: url(../img/bg.png) #962715;
 background-repeat: repeat;
 background-size: auto;
 -webkit-background-size: 102% auto;
@@ -225,9 +237,9 @@ font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: normal; color: 
 -webkit-font-smoothing: antialiased;
 }
 
-a {font-weight: 600; color: #b22; text-decoration: none;}
+a {font-weight: 600; color: #962715; text-decoration: underline;}
 a:hover, 
-a:active {color: #601212; text-decoration: underline;}
+a:active {text-decoration: none;}
 
 a, 
 *:hover {
@@ -254,16 +266,16 @@ line-height: 25px;
 }
 
 ::selection {
-background-color: #778899;
-color: #fff;
+background-color: #962715;
+color: #eee;
 }
 ::-moz-selection {
-background: none repeat scroll 0 0 #778899;
-color: #fff;
+background: none repeat scroll 0 0 #962715;
+color: #eee;
 }
 ::selection {
-background: none repeat scroll 0 0 #778899;
-color: #fff;
+background: none repeat scroll 0 0 #962715;
+color: #eee;
 }
 
 /*
@@ -426,19 +438,14 @@ right: 0;
 transition: 0.30s;
 }
 
-.frpg .wrap div.media_base_width, 
 #container { /* clearfix */
 display: inline-table;
+background: #fff;
 }
-
-.frpg .wrap div.media_base_width {margin: 20% auto 1%;}
-
-#container {background: #fff;}
 
 /*
  * clearfix
  */
-.frpg .wrap div.media_base_width:after, 
 #container:after {
 content: "";
 display: block;
@@ -450,30 +457,29 @@ clear: both;
 /*
  * clearfix from IE/MAC
  */
-* html.frpg .wrap div.media_base_width, 
 * html #container {height: 1%;}
 
-.frpg .wrap div.media_base_width, 
 #container {display: block;}
 
 
 /* Шляпа
 ==============================
  */
-#hat {z-index: 996;}
+#hat {
+background: #1e1e20;
+z-index: 996;
+}
 
 .default {
 position: absolute;
 width: 1100px;
 top: 385px; left: 50%;
 margin-left: -550px;
-background: #1c1c1c;
 }
 .fixed {
 position: fixed;
 width: 100%;
 top: 0; left: 0;
-background: #111;
 }
 
 .in_the_middle {height: auto;}
@@ -491,11 +497,11 @@ line-height: 45px; font-weight: 600; color: #8c8c8c; text-decoration: none;
 
 .menu-main ul li a span {
 padding: 0 3px;
-font-family: 'Playfair Display', sans-serif; font-size: 100%; font-weight: 900; color: #b22;
+font-size: 100%; font-weight: 900; color: #962715;
 }
 
 .menu-main ul li:not(#logo) a:hover {background: #1f1f1f;}
-.menu-main ul li a:hover {color: #b22;}
+.menu-main ul li a:hover {color: #962715;}
 
 /*
  * Фон лого при фиксации
@@ -526,23 +532,12 @@ font-size: 90%; line-height: 45px; color: #a1a1a1;
 .search-bat {
 width: 60px;
 top: 0; right: 0;
-}
-
-.default .search-bat {
-background: -webkit-gradient(left, rgba(28, 28, 28, .90), rgb(28, 28, 28) 100%);
-background: -webkit-linear-gradient(left, rgba(28, 28, 28, .90), rgb(28, 28, 28) 100%);
-background: -moz-linear-gradient(left, rgba(28, 28, 28, .90), rgb(28, 28, 28) 100%);
-background: -o-linear-gradient(left, rgba(28, 28, 28, .90), rgb(28, 28, 28) 100%);
-background: -ms-linear-gradient(left, rgba(28, 28, 28, .90), rgb(28, 28, 28) 100%);
-background: linear-gradient(to left, rgba(28, 28, 28, .90), rgb(28, 28, 28) 100%);
-}
-.fixed .search-bat {
-background: -webkit-gradient(left, rgba(17, 17, 17, .90), rgb(17, 17, 17) 100%);
-background: -webkit-linear-gradient(left, rgba(17, 17, 17, .90), rgb(17, 17, 17) 100%);
-background: -moz-linear-gradient(left, rgba(17, 17, 17, .90), rgb(17, 17, 17) 100%);
-background: -o-linear-gradient(left, rgba(17, 17, 17, .90), rgb(17, 17, 17) 100%);
-background: -ms-linear-gradient(left, rgba(17, 17, 17, .90), rgb(17, 17, 17) 100%);
-background: linear-gradient(to left, rgba(17, 17, 17, .90), rgb(17, 17, 17) 100%);
+background: -webkit-gradient(left, rgba(30, 30, 32, .90), rgb(30, 30, 32) 100%);
+background: -webkit-linear-gradient(left, rgba(30, 30, 32, .90), rgb(30, 30, 32) 100%);
+background: -moz-linear-gradient(left, rgba(30, 30, 32, .90), rgb(30, 30, 32) 100%);
+background: -o-linear-gradient(left, rgba(30, 30, 32, .90), rgb(30, 30, 32) 100%);
+background: -ms-linear-gradient(left, rgba(30, 30, 32, .90), rgb(30, 30, 32) 100%);
+background: linear-gradient(to left, rgba(30, 30, 32, .90), rgb(30, 30, 32) 100%);
 }
 
 .search .search-button, .search input.search-button:active, 
@@ -575,8 +570,8 @@ background: url(../img/vico-tags.png) no-repeat;
  */
 #pull {
 display: none;
-background: #111;
-line-height: 45px; font-weight: bold; color: #b22; text-decoration: none;
+background: #1e1e20;
+line-height: 45px; font-weight: bold; color: #962715; text-decoration: none;
 }
 
 /*
@@ -595,7 +590,7 @@ line-height: 45px; font-weight: bold; color: #8c8c8c; text-decoration: none;
 }
 .mobile_navigation ul li a:hover {
 background: #1f1f1f;
-color: #b22;
+color: #962715;
 }
 
 
@@ -701,7 +696,7 @@ height: 100%;
 
 .main_slide section h3 {font-size: 250%; line-height: 350px; font-weight: bold; color: #f5f5f5; text-shadow: 1px 1px 3px #000;}
 
-.main_slide section h3 span {font-weight: normal; color: #b22;}
+.main_slide section h3 span {font-family: 'pf_stamps_prosolid'; font-weight: normal; color: #962715;}
 
 .main_slide section h3 img {width: 50px;}
 
@@ -845,7 +840,7 @@ margin: 0 0 20px 0;
 .grid .text {
 width: 770px;
 min-height: 210px; height: auto; max-height: 350px;
-border-bottom: 1px solid #eee;
+border-bottom: 1px solid #bbc3c6;
 }
 .grid .text:after {
 content: "";
@@ -869,7 +864,7 @@ z-index: 10;
 .grid .m-cover img {
 width: 100%; height: auto;
 padding: 5px;
-border: 1px solid #eee;
+border: 1px solid #bbc3c6;
 }
 
 .grid .text h3, 
@@ -915,7 +910,7 @@ transition: margin-left 0.2s ease-in-out;
 .content-list {padding: 10px 0 10px 0;}
 
 .content-list h3, 
-.content-list h4 {font-family: 'PT Sans', sans-serif; font-weight: bold; letter-spacing: 0;}
+.content-list h4 {font-weight: bold; letter-spacing: 0;}
 
 .content-list h3 {
 padding: 0 0 0 20px;
@@ -942,6 +937,7 @@ font-size: 90%;
 .preview_center {
 height: 250px;
 margin: 50px auto;
+border-radius: 6px;
 }
 
 .preview_center, 
@@ -1061,7 +1057,7 @@ display: block;
 width: 36px; height: 36px;
 top: 50px; left: auto;
 margin-left: -15px;
-background: #b22;
+background: #962715;
 border-radius: 50%;
 }
 
@@ -1082,7 +1078,7 @@ color: #000;
 .wide_block_color div {padding: 0px 35px;}
 
 .aMessage > p:first-of-type {
-    margin-top: -30px;
+margin-top: -30px;
 }
 
 .aMessage li {
@@ -1096,14 +1092,14 @@ width: 100%; height: 300px;
 }
 
 .aMessage a {
-    color: #000; text-decoration: underline;
+color: #000; text-decoration: underline;
 }
 
 .wide_block, 
 .wide_block_color {height: auto;}
 
 .wide_block_color, 
-.atcScreen {background: #eee;}
+.atcScreen {background: #bbc3c6;}
 
 .wide_block img, 
 .wide_block_color img {max-width: 50%;}
@@ -1113,14 +1109,15 @@ width: 100%; height: 300px;
 .atcScreen {
 width: 60%;
 margin: 15px auto; padding: 7px;
+border-radius: 4px;
 }
 
 .atcScreen img {max-width: 100%;}
 
 .atcScreen p {
 padding: 7px 5px;
-border-left: 5px solid #b22;
-text-align: left; font-size: 85%; color: #777;
+border-left: 5px solid #962715;
+text-align: left; font-size: 85%; color: #1e1e20;
 }
 
 
@@ -1178,7 +1175,7 @@ border: 1px solid #333;
  */
 .footer_info {
 padding: 5px 10px;
-background: #1c1c1c;
+background: #1e1e20;
 font-size: 85%;
 }
 
@@ -1219,7 +1216,7 @@ z-index: 97;
 
 .sidebar section.update .tabs-titles {
 width: 31px; height: 400px;
-background: #1c1c1c;
+background: #1e1e20;
 }
 
 .sidebar section.update .tabs-titles li {
@@ -1241,12 +1238,12 @@ position: absolute;
 display: block;
 width: 30px; height: 50px;
 right: 0; bottom: 0;
-background-image: -webkit-gradient(to bottom, transparent, rgb(28, 28, 28) 90%);
-background-image: -webkit-linear-gradient(to bottom, transparent, rgb(28, 28, 28) 90%);
-background-image: -moz-linear-gradient(to bottom, transparent, rgb(28, 28, 28) 90%);
-background-image: -o-linear-gradient(to bottom, transparent, rgb(28, 28, 28) 90%);
-background-image: -ms-linear-gradient(to bottom, transparent, rgb(28, 28, 28) 90%);
-background-image: linear-gradient(to bottom, transparent, rgb(28, 28, 28) 90%);
+background-image: -webkit-gradient(to bottom, transparent, rgb(30, 30, 32) 90%);
+background-image: -webkit-linear-gradient(to bottom, transparent, rgb(30, 30, 32) 90%);
+background-image: -moz-linear-gradient(to bottom, transparent, rgb(30, 30, 32) 90%);
+background-image: -o-linear-gradient(to bottom, transparent, rgb(30, 30, 32) 90%);
+background-image: -ms-linear-gradient(to bottom, transparent, rgb(30, 30, 32) 90%);
+background-image: linear-gradient(to bottom, transparent, rgb(30, 30, 32) 90%);
 }
 
 .sidebar section.update .tabs-titles li a span {
@@ -1260,7 +1257,7 @@ white-space: nowrap; font-size: 75%; line-height: 30px; letter-spacing: 5px; tex
 transform: rotate(90deg);
 }
 
-.sidebar section.update .tabs-titles li a span b {font-family: 'Playfair Display', sans-serif; font-weight: 900; color: #b22;}
+.sidebar section.update .tabs-titles li a span b {font-weight: 900; color: #962715;}
 
 /*
  * Правый блок: контент
@@ -1268,7 +1265,7 @@ transform: rotate(90deg);
 .sidebar section .inner {
 width: 300px;
 min-height: 500px; height: auto;
-background: #1c1c1c;
+background: #1e1e20;
 border-right: 1px solid #333;
 }
 
@@ -1302,8 +1299,8 @@ color: #8c8c8c;
 }
 .sidebar section .inner ul li a:hover {
 background: #1f1f1f;
-border-left: 1px solid #b22;
-color: #b22; text-decoration: none;
+border-left: 1px solid #962715;
+color: #962715; text-decoration: none;
 }
 
 /*
@@ -1312,7 +1309,7 @@ color: #b22; text-decoration: none;
 .commercial {
 width: 300px; height: auto;
 margin-top: 15px;
-background: #1c1c1c;
+background: #1e1e20;
 z-index: 97;
 }
 
@@ -1324,7 +1321,7 @@ z-index: 97;
  */
 .shoes {
 height: auto;
-background: #1c1c1c;
+background: #1e1e20;
 }
 
 .shoes > section, 
@@ -1461,7 +1458,7 @@ display: inline-block;
 margin: 10px; padding: 15px;
 text-align: center; font-size: 75%; color: #ccc; text-decoration: none;
 }
-a.page-numbers:hover {font-weight: bold; color: #b22;}
+a.page-numbers:hover {font-weight: bold; color: #962715;}
 
 .current {background-color: #1f1f1f;}
 
@@ -1667,6 +1664,11 @@ margin: 0 25%;
 .bordered {border: none;}
 .bordered td {border-left: none;}
 .slidenav {width: 50%;}
+}
+
+@media all and (min-width: 550px) {
+.default,
+.search {border-radius: 6px 6px 0 0;}
 }
 
 @media all and (max-width: 550px) {
