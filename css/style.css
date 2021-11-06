@@ -3,7 +3,7 @@ Theme Name: Jingle Hell
 Theme URI: jingle-hell.fun
 Author: Semen
 Author URI: https://www.fl.ru/users/ss-valeryevich/portfolio/
-Version: 2.2
+Version: 2.4
 */
 
 @import url('font-awesome.css');
@@ -124,7 +124,7 @@ border: solid 1px #474747;
 -webkit-box-shadow: inset 0px 1px 0px #333, 0px 1px 0px #000;
 -moz-box-shadow: inset 0px 1px 0px #333, 0px 1px 0px #000;
 box-shadow: inset 0px 1px 0px #333, 0px 1px 0px #000;
-color: #d3d3d3; text-decoration: none;
+font-family: 'Roboto', sans-serif; color: #d3d3d3; text-decoration: none;
 }
 
 input[type=submit]:hover, 
@@ -233,11 +233,11 @@ background-size: auto;
 background-size: 50%;
 background-repeat: no-repeat;
 overflow-x: hidden; overflow-y: auto;
-font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: normal; color: #aaa;
+font-size: 16px; font-weight: normal;
 -webkit-font-smoothing: antialiased;
 }
 
-a {font-weight: 600; color: #962715; text-decoration: underline;}
+a {font-weight: 600; text-decoration: underline;}
 a:hover, 
 a:active {text-decoration: none;}
 
@@ -257,7 +257,7 @@ h4,
 h5, 
 h6 {
 margin: 7px 0;
-font-weight: 500;
+font-family: 'Roboto', sans-serif; font-weight: 500;
 }
 
 p {
@@ -426,8 +426,6 @@ height: auto;
 right: 0;
 }
 
-.personal_page .wrap {padding-top: 50px;}
-
 .wrap, 
 .fixed, 
 .slidenav {
@@ -492,7 +490,7 @@ top: 0; left: 0;
 .menu-main ul li a {
 display: block;
 padding: 0 14px;
-line-height: 45px; font-weight: 600; color: #8c8c8c; text-decoration: none;
+font-family: 'pf_stamps_prosolid'; line-height: 45px; font-weight: 600; color: #bbc3c6; text-decoration: none;
 }
 
 .menu-main ul li a span {
@@ -520,7 +518,10 @@ text-indent: -999px;
 /*
  * Поиск
  */
-.search {width: 30%;}
+.search {
+width: 30%;
+font-family: 'Roboto', sans-serif;
+}
 
 .search .query {
 margin: 0; padding: 0 0 0 7px;
@@ -540,8 +541,7 @@ background: -ms-linear-gradient(left, rgba(30, 30, 32, .90), rgb(30, 30, 32) 100
 background: linear-gradient(to left, rgba(30, 30, 32, .90), rgb(30, 30, 32) 100%);
 }
 
-.search .search-button, .search input.search-button:active, 
-.search .search-tags, .search input.search-tags:active {
+.search .search-button, .search input.search-button:active {
 position: absolute !important;
 width: 14px; height: 14px;
 top: 50%; right: 0;
@@ -557,12 +557,8 @@ text-indent: -999px;
 cursor: pointer;
 }
 .search .search-button, .search input.search-button:active {
-margin: -7px 28px 0 0;
+margin: -7px 20px 0 0;
 background: url(../img/search.png) no-repeat;
-}
-.search .search-tags, .search input.search-tags:active {
-margin: -7px 7px 0 0;
-background: url(../img/vico-tags.png) no-repeat;
 }
 
 /*
@@ -571,7 +567,7 @@ background: url(../img/vico-tags.png) no-repeat;
 #pull {
 display: none;
 background: #1e1e20;
-line-height: 45px; font-weight: bold; color: #962715; text-decoration: none;
+font-family: 'pf_stamps_prosolid'; line-height: 45px; font-weight: bold; color: #962715; text-decoration: none;
 }
 
 /*
@@ -597,7 +593,10 @@ color: #962715;
 /* Хлебные крошки
 ==============================
  */
-.breadcrumbs {height: 30px;}
+.breadcrumbs {
+height: 30px;
+font-family: 'Roboto', sans-serif;
+}
 
 .breadcrumbs .item {
 display: block;
@@ -694,9 +693,9 @@ background-repeat: no-repeat;
 height: 100%;
 }
 
-.main_slide section h3 {font-size: 250%; line-height: 350px; font-weight: bold; color: #f5f5f5; text-shadow: 1px 1px 3px #000;}
+.main_slide section h3 {font-family: 'pf_stamps_prosolid'; font-size: 250%; line-height: 350px; font-weight: bold; color: #f5f5f5; text-shadow: 1px 1px 3px #000;}
 
-.main_slide section h3 span {font-family: 'pf_stamps_prosolid'; font-weight: normal; color: #962715;}
+.main_slide section h3 span {font-family: 'Roboto', sans-serif; font-weight: normal; color: #962715;}
 
 .main_slide section h3 img {width: 50px;}
 
@@ -792,6 +791,8 @@ font-size: 170%; font-weight: 400; text-shadow: 1px 1px rgb(20, 20, 20),
 80px 80px rgb(28, 28, 28);
 }
 
+.slide_news h3 {font-family: 'Roboto', sans-serif;}
+
 
 /* Страницы
 ------------------------------------------------------------
@@ -818,6 +819,7 @@ margin: 15px 0 15px 0;
 .additional_description {
 margin: 15px 0 0px 0; padding: 11px;
 background: #1c1c1c;
+font-family: 'Roboto', sans-serif;
 }
 
 .additional_description {width: 770px;}
@@ -858,7 +860,7 @@ z-index: 9;
 
 .grid .m-cover {
 width: 130px; height: 130px;
-margin-top: 25px;
+margin-top: 25px; margin-left: 10px;
 z-index: 10;
 }
 .grid .m-cover img {
@@ -870,8 +872,10 @@ border: 1px solid #bbc3c6;
 .grid .text h3, 
 .grid .text p {padding: 0 15px;}
 
-.grid .text h3 a {font-size: 150%; color: #000; text-decoration: underline;}
-.grid .text h3 a:hover {color: #595959; text-decoration: none;}
+.grid .text h3 a {font-family: 'pf_stamps_prosolid'; font-size: 150%; color: #000; text-decoration: none;}
+.grid .text h3 a:hover {color: #595959;}
+
+.grid .text p {font-family: 'Roboto', sans-serif;}
 
 
 /* Группы списков
@@ -882,6 +886,7 @@ border: 1px solid #bbc3c6;
 .content-block {
 margin: 20px;
 border: 1px solid #3b3b3b;
+font-family: 'Roboto', sans-serif;
 }
 
 .content-list-col {
@@ -944,7 +949,7 @@ border-radius: 6px;
 .personal_page_center {background-color: rgb(28, 28, 28);}
 
 .preview_center h1, 
-.preview_center p {color: #f5f5f5;}
+.preview_center p {color: #bbc3c6;}
 
 .preview_center h1 {
 font-family: 'pf_stamps_prosolid'; font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(20, 20, 20), 
@@ -1029,6 +1034,8 @@ font-family: 'pf_stamps_prosolid'; font-size: 170%; line-height: 55px; font-weig
 80px 80px rgb(28, 28, 28);
 }
 
+.preview_center p {font-family: 'Roboto', sans-serif;}
+
 
 /* Контент
 ------------------------------------------------------------
@@ -1060,7 +1067,7 @@ border-radius: 50%;
 
 .aMessage {
 padding-top: 20px; padding-left: 30px;
-color: #000;
+font-family: 'Roboto', sans-serif; color: #000;
 }
 
 .aMessage h2 {font-size: 130%;}
@@ -1113,7 +1120,6 @@ border-radius: 4px;
 
 .atcScreen p {
 padding: 7px 5px;
-border-left: 5px solid #962715;
 text-align: left; font-size: 85%; color: #1e1e20;
 }
 
@@ -1127,6 +1133,7 @@ text-align: left; font-size: 85%; color: #1e1e20;
 margin: 10px 0px;
 background: transparent;
 border-top: 1px solid #333; border-bottom: 1px solid #333;
+font-family: 'Roboto', sans-serif;
 }
 
 .bordered tr:hover {
@@ -1173,8 +1180,10 @@ border: 1px solid #333;
 .footer_info {
 padding: 5px 10px;
 background: #1e1e20;
-font-size: 85%;
+font-family: 'Roboto', sans-serif; font-size: 85%; color: #bbc3c6;;
 }
+
+.footer_info a {color: #962715;}
 
 .subs, 
 .share {margin: 0 5px;}
@@ -1183,23 +1192,7 @@ font-size: 85%;
 /* Комментарии
 ==============================
  */
-
-/*
- * Спойлеры это плохо
- */
-.comSpoiler {clear: both;}
-
-.hideBtn {
-display: block;
-padding: 7px 14px 0px;
-background: transparent url(../img/_plus.gif) no-repeat left center;
-outline: none;
-cursor: pointer;
-}
-
-.hideBtn.show {background-image: url(../img/_minus.gif);}
-
-.hideCont {display: none;}
+#comment_b {font-family: 'Roboto', sans-serif;}
 
 
 /* Правый блок
@@ -1246,7 +1239,7 @@ background-image: linear-gradient(to bottom, transparent, rgb(30, 30, 32) 90%);
 .sidebar section.update .tabs-titles li a span {
 display: block;
 padding-left: 11px;
-white-space: nowrap; font-size: 75%; line-height: 30px; letter-spacing: 5px; text-transform: uppercase; color: #8c8c8c; text-shadow: #000 0px 0px 3px;
+white-space: nowrap; font-family: 'pf_stamps_prosolid'; font-size: 75%; line-height: 30px; letter-spacing: 5px; text-transform: uppercase; color: #8c8c8c; text-shadow: #000 0px 0px 3px;
 -webkit-transform: rotate(90deg);
 -moz-transform: rotate(90deg);
 -o-transform: rotate(90deg);
@@ -1264,6 +1257,7 @@ width: 300px;
 min-height: 500px; height: auto;
 background: #1e1e20;
 border-right: 1px solid #333;
+font-family: 'Roboto', sans-serif;
 }
 
 .sidebar section .inner h3, 
@@ -1319,6 +1313,7 @@ z-index: 97;
 .shoes {
 height: auto;
 background: #1e1e20;
+font-family: 'Roboto', sans-serif; color: #bbc3c6;
 }
 
 .shoes > section, 
@@ -1332,6 +1327,10 @@ margin: 4px 8px;
 
 .shoes, 
 .shoes_for_personal_page {color: #ccc;}
+
+.shoes a {
+    color: #962715;
+}
 
 
 /* Плеер
@@ -1387,7 +1386,8 @@ cursor: pointer;
  */
 .introjs-tooltip {
     color: #fff;
-    background-color: rgba(56, 56, 56, 0.9)
+    background-color: rgba(56, 56, 56, 0.9);
+    font-family: 'Roboto', sans-serif;
 }
 
 .introjs-button,
@@ -1448,7 +1448,10 @@ cursor: pointer;
 /* Переключатели
 ==============================
  */
-.not_twitch {clear: both;}
+.not_twitch {
+clear: both;
+font-family: 'Roboto', sans-serif;
+}
 
 .page-numbers {
 display: inline-block;
@@ -1588,7 +1591,7 @@ left: 50%; margin-left: -45%;
 .commercial {margin: 0px;}
 .grid {margin-bottom: 0px;}
 .grid .text {max-height: none;}
-.grid .m-cover {margin: 0 5px;}
+.grid .m-cover {margin: 5px;}
 .sidebar section.update .tabs-titles li {
 float: left;
 border-right: 1px solid #333;
@@ -1617,6 +1620,11 @@ transform: rotate(0deg);
 .sidebar section .inner ul {padding-right: 0;}
 .shoes {margin: 0 auto 45px;}
 .not_twitch {margin: 15px 0 15px 0;}
+}
+
+@media all and (min-width: 1150px) {
+.sidebar section.update .tabs-titles {border-radius: 0 4px 4px 0;}
+.sidebar section .inner {border-radius: 4px 0 0 4px;}
 }
 
 @media all and (max-width: 750px) {
@@ -1665,7 +1673,7 @@ margin: 0 25%;
 
 @media all and (min-width: 550px) {
 .default,
-.search {border-radius: 6px 6px 0 0;}
+.search {border-radius: 4px 4px 0 0;}
 }
 
 @media all and (max-width: 550px) {
