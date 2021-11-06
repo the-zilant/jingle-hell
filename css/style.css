@@ -944,13 +944,10 @@ border-radius: 6px;
 .personal_page_center {background-color: rgb(28, 28, 28);}
 
 .preview_center h1, 
-.personal_page_center h1, 
-.preview_center p, 
-.personal_page_center p {color: #f5f5f5;}
+.preview_center p {color: #f5f5f5;}
 
-.preview_center h1, 
-.personal_page_center h1 {
-font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(20, 20, 20), 
+.preview_center h1 {
+font-family: 'pf_stamps_prosolid'; font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(20, 20, 20), 
 2px 2px rgb(20, 20, 20), 
 3px 3px rgb(20, 20, 20), 
 4px 4px rgb(20, 20, 20), 
