@@ -275,7 +275,7 @@ h4,
 h5, 
 h6 {
 margin: 7px 0;
-font-family: 'Roboto', sans-serif; font-weight: 500;
+font-family: 'Yeseva One', cursive;
 }
 
 p {
@@ -855,7 +855,6 @@ border-bottom: 1px solid #333;
 .grid {
 height: auto;
 margin: 0 0 20px 0;
-font-family: 'Roboto', sans-serif;
 }
 
 .grid .text {
@@ -893,6 +892,8 @@ border: 1px solid #bbc3c6;
 
 .grid .text h3 a {font-size: 150%; color: #000; text-decoration: none;}
 .grid .text h3 a:hover {color: #595959;}
+
+.grid .text p {font-family: 'Roboto', sans-serif;}
 
 
 /* Группы списков
@@ -969,7 +970,7 @@ border-radius: 6px;
 .preview_center p {color: #bbc3c6;}
 
 .preview_center h1 {
-font-family: 'Roboto', sans-serif; font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(20, 20, 20), 
+font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(20, 20, 20), 
 2px 2px rgb(20, 20, 20), 
 3px 3px rgb(20, 20, 20), 
 4px 4px rgb(20, 20, 20), 
