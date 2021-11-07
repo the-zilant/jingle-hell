@@ -20,18 +20,6 @@ url('../font/Awesome/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format
 font-style: normal; font-weight: normal;
 }
 
-@font-face {
-font-family: 'pf_stamps_prosolid';
-src: url('../font/stampspro/stampspro-solid-webfont.eot');
-src:
-url('../font/stampspro/stampspro-solid-webfont.eot?#iefix') format('embedded-opentype'),
-url('../font/stampspro/stampspro-solid-webfont.woff2') format('woff2'),
-url('../font/stampspro/stampspro-solid-webfont.woff') format('woff'),
-url('../font/stampspro/stampspro-solid-webfont.ttf') format('truetype'),
-url('../font/stampspro/stampspro-solid-webfont.svg#pf_stamps_prosolid') format('svg');
-font-style: normal; font-weight: normal;
-}
-
 
 /* Reset
 ==============================
@@ -258,13 +246,9 @@ background: #962715;
 
 body {
 min-width: 320px; width: 100%;
-background-image: url(../img/bg.png);
-background-size: auto;
--webkit-background-size: 102% auto;
--moz-background-size: cover;
--o-background-size: 102% auto;
--khtml-background-size: cover;
-background-size: 50%;
+background-image: url(../img/seamGLOBAL.svg), url(../img/seamGLOBAL.svg);
+background-size: 300px auto;
+background-position: -150px 20px, calc(100% + 150px) 20px;
 background-repeat: no-repeat;
 overflow-x: hidden; overflow-y: auto;
 font-size: 16px; font-weight: normal;
@@ -524,7 +508,7 @@ top: 0; left: 0;
 .menu-main ul li a {
 display: block;
 padding: 0 14px;
-font-family: 'pf_stamps_prosolid'; line-height: 45px; font-weight: 600; color: #bbc3c6; text-decoration: none;
+font-family: 'Roboto', sans-serif; line-height: 45px; font-weight: 600; color: #bbc3c6; text-decoration: none;
 }
 
 .menu-main ul li a span {
@@ -601,7 +585,7 @@ background: url(../img/search.png) no-repeat;
 #pull {
 display: none;
 background: #1e1e20;
-font-family: 'pf_stamps_prosolid'; line-height: 45px; font-weight: bold; color: #962715; text-decoration: none;
+font-family: 'Roboto', sans-serif; line-height: 45px; font-weight: bold; color: #962715; text-decoration: none;
 }
 
 /*
@@ -727,7 +711,7 @@ background-repeat: no-repeat;
 height: 100%;
 }
 
-.main_slide section h3 {font-family: 'pf_stamps_prosolid'; font-size: 250%; line-height: 350px; font-weight: bold; color: #f5f5f5; text-shadow: 1px 1px 3px #000;}
+.main_slide section h3 {font-family: 'Metal Mania', cursive; font-size: 250%; line-height: 350px; font-weight: bold; color: #f5f5f5; text-shadow: 1px 1px 3px #000;}
 
 .main_slide section h3 span {font-family: 'Roboto', sans-serif; font-weight: normal; color: #962715;}
 
@@ -871,6 +855,7 @@ border-bottom: 1px solid #333;
 .grid {
 height: auto;
 margin: 0 0 20px 0;
+font-family: 'Roboto', sans-serif;
 }
 
 .grid .text {
@@ -906,10 +891,8 @@ border: 1px solid #bbc3c6;
 .grid .text h3, 
 .grid .text p {padding: 0 15px;}
 
-.grid .text h3 a {font-family: 'pf_stamps_prosolid'; font-size: 150%; color: #000; text-decoration: none;}
+.grid .text h3 a {font-size: 150%; color: #000; text-decoration: none;}
 .grid .text h3 a:hover {color: #595959;}
-
-.grid .text p {font-family: 'Roboto', sans-serif;}
 
 
 /* Группы списков
@@ -986,7 +969,7 @@ border-radius: 6px;
 .preview_center p {color: #bbc3c6;}
 
 .preview_center h1 {
-font-family: 'pf_stamps_prosolid'; font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(20, 20, 20), 
+font-family: 'Metal Mania', cursive; font-size: 170%; line-height: 55px; font-weight: 400; text-shadow: 1px 1px rgb(20, 20, 20), 
 2px 2px rgb(20, 20, 20), 
 3px 3px rgb(20, 20, 20), 
 4px 4px rgb(20, 20, 20), 
@@ -1273,7 +1256,7 @@ background-image: linear-gradient(to bottom, transparent, rgb(30, 30, 32) 90%);
 .sidebar section.update .tabs-titles li a span {
 display: block;
 padding-left: 11px;
-white-space: nowrap; font-family: 'pf_stamps_prosolid'; font-size: 75%; line-height: 30px; letter-spacing: 5px; text-transform: uppercase; color: #8c8c8c; text-shadow: #000 0px 0px 3px;
+white-space: nowrap; font-family: 'Roboto', sans-serif; font-size: 75%; line-height: 30px; letter-spacing: 5px; text-transform: uppercase; color: #8c8c8c; text-shadow: #000 0px 0px 3px;
 -webkit-transform: rotate(90deg);
 -moz-transform: rotate(90deg);
 -o-transform: rotate(90deg);
