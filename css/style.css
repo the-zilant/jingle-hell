@@ -1544,7 +1544,6 @@ li:nth-child(2n).grid {margin: 0 0 0 34px;}
 #rainCanvas {margin-left: -645px;}
 .basic-page, 
 .additional_description {width: 970px;}
-.modules {width: 969px;}
 .grid {width: 450px;}
 .sidebar {width: 331px;}
 .sidebar section .inner, 
@@ -1560,7 +1559,7 @@ li:nth-child(2n).grid {margin: 0 0 0 34px;}
 .additional_description, 
 .grid .text {width: 770px;}
 .modules {
-width: 800;
+width: 800px;
 margin: 15px 0 15px 0;
 }
 .grid, 
