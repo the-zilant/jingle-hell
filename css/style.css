@@ -1501,7 +1501,7 @@ a.page-numbers:hover {font-weight: bold; color: #962715;}
 .basic-page, 
 .additional_description {width: 1370px;}
 .modules {
-width: 1269px;
+width: 1169px;
 margin: 15px 0 15px 0;
 }
 .grid {
@@ -1526,7 +1526,7 @@ li:nth-child(8).grid {margin: 0 34px;}
 #rainCanvas {margin-left: -750px;}
 .basic-page, 
 .additional_description {width: 1170px;}
-.modules {width: 1069px;}
+.modules {width: 969px;}
 .grid {width: 517px;}
 li:nth-child(5).grid, 
 li:nth-child(8).grid {margin: 0;}
@@ -1559,7 +1559,7 @@ li:nth-child(2n).grid {margin: 0 0 0 34px;}
 .additional_description, 
 .grid .text {width: 770px;}
 .modules {
-width: 800px;
+width: 869px;
 margin: 15px 0 15px 0;
 }
 .grid, 
