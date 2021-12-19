@@ -12,9 +12,9 @@ menuHeight = menu.height();
 $(function() {
 
 	let hat = $('#hat'), 
-		pos = hat.offset();
-	let index = 'key_tab';
-	let dataStore = window.sessionStorage;
+		pos = hat.offset(), 
+		index = 'key_tab', 
+		dataStore = window.sessionStorage;
 	try {
 		let oldIndex = dataStore.getItem(index);
 	} catch(e) {
