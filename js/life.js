@@ -1,10 +1,30 @@
-// latched when scrolling
+let wnd = $(window), 
+	wrap = $('.wrap'), 
+	menu = $('.in_the_middle'), 
+	mobile_navigation = $('.mobile_navigation'), 
+	pull = $('#pull'), 
+	menuBtn = $('#menuBtn'), 
+	slidenav = $('.slidenav'), 
+	overlay = $('#overlay');
+
+menuHeight = menu.height();
 
 $(function() {
 
-	var hat = $('#hat'), pos = hat.offset();
-
+	let hat = $('#hat'), 
+		pos = hat.offset();
+	let index = 'key_tab';
+	let dataStore = window.sessionStorage;
+	try {
+		let oldIndex = dataStore.getItem(index);
+	} catch(e) {
+		let oldIndex = 0;
+	}
+	// latched when scrolling
 	$(window).scroll(function() {
+
+		let top = wnd.scrollTop(), 
+			opacity = top > 500 ? 1 : top * 2 / 1000;
 
 		if ($(this).scrollTop() > pos.top+hat.height() && hat.hasClass('default')) {
 
@@ -19,53 +39,35 @@ $(function() {
 			});
 
 		}
-
+		// mobile navigation
+		mobile_navigation.css('opacity', opacity);
 	});
-});
 
-
-// drop down menu
-
-$('#drop-down').click(function() {
-	$("ul.language_selection").show();
-});
-
-jQuery(function($) {
-	$(document).mouseup(function (e) {
-		var ul = $(".language_selection");
-		if (!ul.is(e.target) && ul.has(e.target).length === 0) {
-			ul.hide();
+	// content tabs
+	$('.partition').tabs({
+		active : oldIndex, activate : function(event, ui) {
+			let newIndex = ui.newTab.parent().children().index(ui.newTab);
+			dataStore.setItem(index, newIndex)
 		}
 	});
 });
 
-
 // for tablet, mobile
-
-var pull = $('#pull');
-menu = $('.in_the_middle');
-menuHeight = menu.height();
-
 $(pull).on('click', function(e) {
 	e.preventDefault();
 	menu.slideToggle();
 });
 
-$(window).resize(function() {
-	var w = $(window).width();
-	if(w > 320 && menu.is(':hidden')) {
+wnd.resize(function() {
+
+	let w = $(window).width();
+
+	if (w > 320 && menu.is(':hidden')) {
 		menu.removeAttr('style');
 	}
 });
 
-
 // pleer
-
-var menuBtn = $('#menuBtn');
-var slidenav = $('.slidenav');
-var wrap = $('.wrap');
-var overlay = $('#overlay');
-
 menuBtn.click(function() {
 	toggleNav();
 });
@@ -80,41 +82,18 @@ function toggleNav() {
 	slidenav.toggleClass('active');
 }
 
-
-// aside tabs
-
-$('.update').tabs();
-
-
-// content tabs
-
-$(function() {
-	var index = 'key_tab';
-	var dataStore = window.sessionStorage;
-	try {
-		var oldIndex = dataStore.getItem(index);
-	} catch(e) {
-		var oldIndex = 0;
-	}
-
-	$('.partition').tabs({
-		active : oldIndex, 
-		activate : function( event, ui ) {
-			var newIndex = ui.newTab.parent().children().index(ui.newTab);
-			dataStore.setItem( index, newIndex )
-		}
+// load root
+window.onload = function () {
+	// introJs
+	introJs().setOptions({
+		tooltipClass: 'customTooltip', 
+		position: 'left', 
+		showButtons: false
+	}).addHints();
+	// aside tabs
+	$('.update').tabs();
+	// slider
+	$('.slider').glide({
+		autoplay: 11000
 	});
-
-}); (jQuery)
-
-
-// slider
-
-$('.slider').glide({
-	autoplay: 11000
-});
-
-
-// introJs
-
-introJs().setOptions({position: 'left'}).addHints();
+}
