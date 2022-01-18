@@ -1,0 +1,118 @@
+/*
+	Theme Name: ДИЧЬ
+	Theme URI: jingle-hell.fun
+	Author: Semen
+	Author URI: https://www.fl.ru/users/ss-valeryevich/portfolio/
+	Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Metal+Mania&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('src/css/font-awesome.css');
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('src/font/Awesome/fontawesome-webfont.eot?v=4.3.0');
+    src: 
+        url('src/font/Awesome/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), 
+        url('src/font/Awesome/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), 
+        url('src/font/Awesome/fontawesome-webfont.woff?v=4.3.0') format('woff'), 
+        url('src/font/Awesome/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), 
+        url('src/font/Awesome/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+    font-style: normal; font-weight: normal;
+}
+
+/**
+ * base elements
+ */
+body {
+    background: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 7px 0;
+    font-family: 'Fira Sans Condensed', sans-serif; text-rendering: optimizeLegibility;
+}
+
+p {
+    margin: 11px 0;
+    line-height: 25px;
+}
+
+a {
+    font-size: 100%; font-weight: 600; text-decoration: underline;
+    outline: 0;
+}
+a:hover, a:active {text-decoration: none;}
+
+a, *:hover {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    -ms-transition: 0.2s;
+    transition: 0.2s;
+}
+
+/**
+ * Стилизация скроллбара
+ */
+*, html * {
+    scrollbar-width: thin;
+    scrollbar-color: #1e1e20 white;
+}
+
+*::-webkit-scrollbar, html *::-webkit-scrollbar {width: 12px; height: 12px;}
+
+*::-webkit-scrollbar-track, html *::-webkit-scrollbar-track {background: white;}
+
+*::-webkit-scrollbar-thumb, html *::-webkit-scrollbar-thumb {
+    background-color: #1e1e20;
+    border-radius: 0;
+    border: 3px solid white;
+}
+
+/**
+ * Выделение
+ */
+::selection {
+    background-color: #962715;
+    color: #eee;
+}
+::-moz-selection {
+    background: none repeat scroll 0 0 #962715;
+    color: #eee;
+}
+::selection {
+    background: none repeat scroll 0 0 #962715;
+    color: #eee;
+}
+
+/**
+ * Фильтры
+ */
+.black_and_white {
+    -webkit-filter: grayscale(70%);
+    -moz-filter: grayscale(70%);
+    -o-filter: grayscale(70%);
+    -ms-filter: grayscale(70%);
+    filter: grayscale(70%);
+}
+.blur {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+.brightness {
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+/**
+ * Grid
+ */
+.grid {
+    text-align: center; font-family: 'Philosopher', sans-serif; font-style: normal;
+}
